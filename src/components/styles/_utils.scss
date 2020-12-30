@@ -1,0 +1,23 @@
+$violet : #5964E0;
+$light-violet : #939BF4;
+$very-dark-blue: #19202D;
+$midnight : #121721;
+$white: #FFFFFF;
+$light-grey: #F4F6F8;
+$gray: #9DAEC2;
+$dark-gray: #6E8098;
+
+@mixin button1 {
+  height: 3rem;
+  width: 140px;
+  border: none;
+  border-radius: 5px;
+  background-color: $violet;
+  color: $white;
+  font-size: 1rem;
+
+  &:hover {
+    background-color: $light-violet;
+  }
+}
+

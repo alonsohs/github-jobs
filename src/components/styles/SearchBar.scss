@@ -1,0 +1,101 @@
+@import "utils";
+
+@mixin searchBarInput {
+  height: 100%;
+  padding: 0 1.5rem;
+  display: flex ;
+  align-items: center;
+  border-right: 1px solid rgba(0, 0, 0, .2);
+
+  img {
+    height: 24px;
+    width: 24px;
+  }
+
+  input {
+    height: 30%;
+    width: 100%;
+    margin-left: 1rem;
+    border: none;
+    font-size: 1rem;
+    color: $very-dark-blue;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.searchBar {
+  max-width: 1100px;
+  height: 80px;
+  background-color: $white;
+  border-radius: 5px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 2fr 1.3fr 1fr;
+  align-items: center;
+  position: relative;
+  top: -40px;
+
+
+  &__title {
+    @include searchBarInput;
+  }
+
+  &__location {
+    @include searchBarInput;
+  }
+
+  &__fullTimeJob {
+    display: flex;
+    align-items: center;
+
+    .custom-checkbox {
+      display: inline-flex;
+      cursor: pointer;
+      align-items: center;
+    }
+
+    .custom-checkbox-show--checkbox {
+      background-color: $gray;
+    }
+
+    .custom-checkbox > .custom-checkbox-input {
+      display: none;
+    }
+
+    .custom-checkbox > .custom-checkbox-show {
+      display: inline-block;
+      width: 30px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 60%;
+    }
+
+    .custom-checkbox > .custom-checkbox-text {
+      line-height: 20px;
+      width: 100%;
+    }
+
+    .custom-checkbox > .custom-checkbox-input:checked + .custom-checkbox-show--checkbox {
+      background-color: $violet;
+    }
+
+    .custom-checkbox-text {
+      font-size: 1rem;
+      font-weight: bold;
+      margin-left: 1rem;
+      color: $very-dark-blue;
+    }
+  }
+
+  &__search {
+
+    &--button {
+      @include button1;
+    }
+  }
+}
+

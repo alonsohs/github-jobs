@@ -1,5 +1,7 @@
+@import "src/components/styles/utils";
+
 .home.light {
-  background-color: #F4F6F8 ;
+  background-color: $light-grey ;
   position: relative;
-  z-index: -2;
+  z-index: 0;
 }

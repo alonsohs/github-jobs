@@ -1,3 +1,4 @@
+@import "utils";
 
 .header {
   position: relative;
@@ -46,7 +47,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: #FFFFFF;
+      background-color: $white;
       -webkit-transition: .4s;
       transition: .4s;
     }
@@ -58,21 +59,21 @@
       width: 26px;
       left: 4px;
       bottom: 4px;
-      background-color: #5964E0;
+      background-color: $violet;
       -webkit-transition: .4s;
       transition: .4s;
     }
 
     input:checked + .slider {
-      background-color: #FFFFFF;
+      background-color: $white;
     }
 
     input:hover + .slider:before {
-      background-color: #939BF4;
+      background-color: $light-violet;
     }
 
     input:checked + .slider:before{
-      background-color: #5964E0;
+      background-color: $violet;
     }
 
     input:checked + .slider:before {
@@ -82,7 +83,7 @@
     }
 
     input:checked:hover + .slider:before {
-      background-color: #939BF4;
+      background-color: $light-violet;
     }
 
     /* Rounded sliders */
