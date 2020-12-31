@@ -1,3 +1,4 @@
+@import "utils";
 
 * {
   box-sizing: border-box;
@@ -21,4 +22,12 @@
 
 body {
   font-family: 'Kumbh Sans', sans-serif;
+}
+
+h3 {
+  @include h3;
+}
+
+h4 {
+  @include h4;
 }

@@ -21,3 +21,15 @@ $dark-gray: #6E8098;
   }
 }
 
+@mixin h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+@mixin h4 {
+  font-size: .9rem;
+  font-weight: bold;
+  line-height: 1.2rem;
+}
+

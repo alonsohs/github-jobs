@@ -1,0 +1,55 @@
+@import "utils";
+* {
+  text-decoration: none;
+}
+
+.jobItem {
+  height: 250px;
+  padding: 2rem;
+  background-color: $white;
+  border-radius: 15px;
+  display: grid;
+  grid-template-rows: min-content min-content min-content auto;
+  align-items: self-start;
+  gap: 1rem;
+  position: relative;
+
+  &__companyLogo {
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 2rem;
+    top: -2rem;
+
+    img {
+      width: inherit;
+    }
+  }
+
+  &__timeInfo {
+      color: $gray;
+      font-size: 1rem;
+
+    span {
+      font-size: 2rem;
+    }
+  }
+
+  &__title {
+    color: $very-dark-blue;
+  }
+
+  &__company {
+    color: $gray;
+  }
+
+  &__location {
+    color: $violet;
+    align-self: end;
+  }
+}
