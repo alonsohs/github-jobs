@@ -3,6 +3,8 @@
 .header {
   position: relative;
   height: 161px;
+  background-repeat: no-repeat;
+
 
 
   .wrapper {
@@ -10,13 +12,6 @@
     align-items: center;
     justify-content: space-between;
     padding-bottom: 40px;
-  }
-
-  &__background--image {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 161px;
   }
 
   &__toggle {

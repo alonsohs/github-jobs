@@ -3,13 +3,15 @@ import React from "react";
 import logo from "../assets/desktop/logo.svg"
 import sunIcon from "../assets/desktop/icon-sun.svg"
 import moonIcon from "../assets/desktop/icon-moon.svg"
-import headerBackgroung from "../assets/desktop/bg-pattern-header.svg"
+import headerBackground from "../assets/desktop/bg-pattern-header.svg"
 
 import './styles/Header.scss'
 
 const Header = () => (
-    <header className="header">
-        <img src={headerBackgroung} alt="background" className="header__background--image"/>
+    <header
+        className="header"
+        style={{backgroundImage: `url(${headerBackground})`}}
+    >
         <div className="wrapper">
             <picture className="header__logo">
                 <img src={logo} alt="logo" className="header__logo--image"/>
