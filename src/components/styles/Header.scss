@@ -11,6 +11,10 @@
     background-size: auto;
   }
 
+  @include media(desktop-xl) {
+    background-size: 100%;
+  }
+
   .wrapper {
     display: flex;
     align-items: center;
