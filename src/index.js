@@ -12,7 +12,7 @@ ReactDOM.render(
       <BrowserRouter>
           <Layout>
               <Switch>
-                  <Route exact path={'/'} component={Home}/>
+                  <Route exact path={'/github-jobs/'} component={Home}/>
               </Switch>
           </Layout>
       </BrowserRouter>
