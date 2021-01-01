@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/github-jobs/static/css/main.20412cd2.chunk.css",
+    "main.js": "/github-jobs/static/js/main.249da0b0.chunk.js",
+    "main.js.map": "/github-jobs/static/js/main.249da0b0.chunk.js.map",
+    "runtime-main.js": "/github-jobs/static/js/runtime-main.4c316a7b.js",
+    "runtime-main.js.map": "/github-jobs/static/js/runtime-main.4c316a7b.js.map",
+    "static/js/2.f677d322.chunk.js": "/github-jobs/static/js/2.f677d322.chunk.js",
+    "static/js/2.f677d322.chunk.js.map": "/github-jobs/static/js/2.f677d322.chunk.js.map",
+    "index.html": "/github-jobs/index.html",
+    "static/css/main.20412cd2.chunk.css.map": "/github-jobs/static/css/main.20412cd2.chunk.css.map",
+    "static/js/2.f677d322.chunk.js.LICENSE.txt": "/github-jobs/static/js/2.f677d322.chunk.js.LICENSE.txt",
+    "static/media/bg-pattern-header.f3307602.svg": "/github-jobs/static/media/bg-pattern-header.f3307602.svg",
+    "static/media/company-icon.9667cde9.svg": "/github-jobs/static/media/company-icon.9667cde9.svg",
+    "static/media/icon-check.7b769ecf.svg": "/github-jobs/static/media/icon-check.7b769ecf.svg",
+    "static/media/icon-location.325ff3d9.svg": "/github-jobs/static/media/icon-location.325ff3d9.svg",
+    "static/media/icon-moon.038e80ca.svg": "/github-jobs/static/media/icon-moon.038e80ca.svg",
+    "static/media/icon-search-white.da653cb6.svg": "/github-jobs/static/media/icon-search-white.da653cb6.svg",
+    "static/media/icon-search.09900c2e.svg": "/github-jobs/static/media/icon-search.09900c2e.svg",
+    "static/media/icon-sun.9422c153.svg": "/github-jobs/static/media/icon-sun.9422c153.svg",
+    "static/media/logo.8c0b6449.svg": "/github-jobs/static/media/logo.8c0b6449.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4c316a7b.js",
+    "static/js/2.f677d322.chunk.js",
+    "static/css/main.20412cd2.chunk.css",
+    "static/js/main.249da0b0.chunk.js"
+  ]
+}
