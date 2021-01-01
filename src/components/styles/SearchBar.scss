@@ -19,6 +19,7 @@
     border: none;
     font-size: 1rem;
     color: $very-dark-blue;
+    background-color: transparent;
 
     &:focus {
       outline: none;
@@ -27,20 +28,41 @@
 }
 
 .searchBar {
-  max-width: 1100px;
-  height: 80px;
-  background-color: $white;
-  border-radius: 5px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 3fr 2fr 1.3fr 1fr;
-  align-items: center;
-  position: relative;
-  top: -40px;
+
+  &__container {
+    height: 80px;
+    background-color: $white;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding-right: 1rem;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1.3fr 1fr;
+    align-items: center;
+    position: relative;
+    top: -40px;
+
+    @include media(tablet-s) {
+      grid-template-columns: 1fr 1fr .5fr .3fr;
+    }
+
+    @include media(mobile) {
+      grid-template-columns: 1fr 66px;
+    }
+  }
 
 
   &__title {
     @include searchBarInput;
+
+    input{
+      @include media(mobile) {
+        margin: 0;
+      }
+    }
+
+    input{
+
+    }
   }
 
   &__location {
@@ -50,6 +72,7 @@
   &__fullTimeJob {
     display: flex;
     align-items: center;
+    padding-left: 1rem;
 
     .custom-checkbox {
       display: inline-flex;
@@ -59,6 +82,11 @@
 
     .custom-checkbox-show--checkbox {
       background-color: $gray;
+      border-radius: 2px;
+
+      &:hover {
+        background-color: $light-violet;
+      }
     }
 
     .custom-checkbox > .custom-checkbox-input {
@@ -92,10 +120,25 @@
   }
 
   &__search {
-
+    @include media(mobile) {
+      margin-left: 1rem;
+    }
     &--button {
       @include button1;
     }
   }
 }
 
+.darkMode .searchBar {
+
+  &__container {
+    background-color: $very-dark-blue;
+  }
+
+  &__fullTimeJob {
+
+    .custom-checkbox-text {
+      color: $white;
+    }
+  }
+}

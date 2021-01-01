@@ -11,13 +11,14 @@
   height: inherit;
   max-width: 1100px;
   margin: 0 auto;
-  display: inherit;
-  flex-direction: inherit;
-  grid-template-rows: inherit;
-  grid-template-columns: inherit;
-  grid-template-areas: inherit;
-  justify-content: inherit;
-  align-items: inherit;
+
+  @include media(tablet-l) {
+    padding: 0 1.5rem;
+  }
+
+  @include media(mobile) {
+    padding: 0 1rem;
+  }
 }
 
 body {

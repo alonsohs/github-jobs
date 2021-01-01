@@ -1,0 +1,23 @@
+@mixin media ($breakpoint) {
+
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 767px) { @content; }
+  }
+
+  @else if $breakpoint == tablet-s {
+    @media only screen and (max-width: 992px) { @content; }
+  }
+
+  @else if $breakpoint == tablet-l {
+    @media only screen and (max-width: 1120px) { @content; }
+  }
+
+  @else if $breakpoint == tablet-s-only {
+    @media only screen and (min-width: 768px) and (max-width: 992px) { @content; }
+  }
+
+  @else if $breakpoint == tablet-l-only {
+    @media only screen and (min-width: 768px) and (max-width: 992px) and (orientation : landscape) { @content; }
+  }
+
+}

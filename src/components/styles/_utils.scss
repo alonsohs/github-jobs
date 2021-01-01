@@ -1,3 +1,5 @@
+@import "breakpoints";
+
 $violet : #5964E0;
 $light-violet : #939BF4;
 $very-dark-blue: #19202D;
@@ -9,7 +11,8 @@ $dark-gray: #6E8098;
 
 @mixin button1 {
   height: 3rem;
-  width: 140px;
+  max-width: 140px;
+  width: 100%;
   border: none;
   border-radius: 5px;
   background-color: $violet;

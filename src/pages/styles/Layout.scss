@@ -1,0 +1,11 @@
+@import "./src/components/styles/utils";
+
+.layout {
+  background-color: $light-grey ;
+
+
+  &.darkMode {
+    background-color: $midnight;
+  }
+
+}

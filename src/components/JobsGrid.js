@@ -1,5 +1,6 @@
 import React, {useState, useEffect}from "react";
 import JobItem from "./JobItem";
+import Loader from "./Loader";
 
 import './styles/JobsGrid.scss'
 
@@ -17,7 +18,6 @@ const JobsGrid = () => {
             loading: true,
         })
         const URL = `https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?page=${state.page}`
-        console.log(URL)
         const response = await fetch(URL)
         const data = await response.json()
         setState({
@@ -48,7 +48,7 @@ const JobsGrid = () => {
                     }
                 </div>
                 {state.loading && (
-                    <div>Cargando</div>
+                    <Loader></Loader>
                 )}
                 {!state.loading && (
                     <div className="jobsGrid__loadMore">

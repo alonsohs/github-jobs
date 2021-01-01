@@ -8,8 +8,7 @@ import './styles/Home.scss'
 const Home = () => {
 
     return (
-        <div className="home light">
-            <Header/>
+        <div className="home">
             <SearchBar/>
             <JobsGrid/>
         </div>

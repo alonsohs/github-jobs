@@ -5,7 +5,11 @@
   height: 161px;
   background-repeat: no-repeat;
 
-
+  @include media(mobile) {
+    height: 136px;
+    background-position: right top;
+    background-size: auto;
+  }
 
   .wrapper {
     display: flex;
@@ -25,6 +29,10 @@
       display: inline-block;
       width: 60px;
       height: 34px;
+
+      @include media(mobile) {
+        margin: 0 1rem;
+      }
     }
 
     /* Hide default HTML checkbox */

@@ -7,7 +7,7 @@ import headerBackground from "../assets/desktop/bg-pattern-header.svg"
 
 import './styles/Header.scss'
 
-const Header = () => (
+const Header = ({handleToogle}) => (
     <header
         className="header"
         style={{backgroundImage: `url(${headerBackground})`}}
@@ -19,7 +19,12 @@ const Header = () => (
             <div className="header__toggle">
                 <img src={sunIcon} alt="light mode" className="header__toggle--light"/>
                 <label className="switch">
-                    <input type="checkbox" id="switch-pricing"/><span className="slider round"/>
+                    <input
+                        type="checkbox"
+                        id="switch-theme"
+                        onChange={handleToogle}
+                    />
+                    <span className="slider round"/>
                 </label>
                 <img src={moonIcon} alt="dark mode" className="header__toggle--dark"/>
             </div>
